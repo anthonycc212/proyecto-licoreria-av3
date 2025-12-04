@@ -1,65 +1,75 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Declara el tipo de documento HTML5 -->
+<html lang="es"> <!-- Indica que el contenido está en español -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Licorería UTP</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8"> <!-- Define la codificación de caracteres -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta la visualización en móviles -->
+  <title>Licorería UTP</title> <!-- Título de la pestaña del navegador -->
+  <link rel="stylesheet" href="assets/css/styles.css"> <!-- Enlaza el archivo CSS principal -->
 
   <!-- HTML favicon -->
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<!-- ICONOS FONT AWESOME (CDN) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pVI6Y3KkqT8xqZb1rV0KxQFQe4yqj0pXG8z8t0m9zF1m6z6g1kY0gY5X9vK3fR4w2Q6KZf3Q9b0t6N1Q9h2g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!-- Icono de la pestaña -->
 
+  <!-- ICONOS FONT AWESOME (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" /> <!-- Librería de iconos -->
 </head>
 <body>
 
-<div class="topbar">
-    <div class="contact-info" aria-label="Información de contacto">
-      <span><i class="fa-solid fa-phone"></i> Número de contacto: +51 932443215</span>
-      <span><i class="fa-solid fa-envelope"></i> Correo: contacto@licoreriautp.com</span>
-    </div>
+<div class="topbar"> <!-- Barra superior de contacto -->
 
-  <div class="social-icons">
-   <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-    <img src="assets/img/logofacebook.jpg" alt="Facebook">
-    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-    <img src="assets/img/logoinstagram.jpg" alt="instagram">
-    <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
-       <img src="assets/img/logotwitter.png" alt="twitter">
+  <div class="contact-info" aria-label="Información de contacto"> <!-- Contenedor de datos de contacto -->
+    <a href="tel:988122324"> <!-- Enlace para llamar -->
+      <span><i class="fa-solid fa-phone"></i> Número de contacto: +51 932443215</span> <!-- Icono y número -->
+    </a>
+    <a href="contacto@licoreriautp.com"> <!-- Enlace de correo -->
+      <span><i class="fa-solid fa-envelope"></i> Correo: contacto@licoreriautp.com</span> <!-- Icono y correo -->
+    </a>
   </div>
+
+  <div class="social-icons"> <!-- Íconos de redes sociales -->
+    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a> <!-- Icono Facebook -->
+    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a> <!-- Icono Instagram -->
+    <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a> <!-- Icono Twitter -->
+  </div>
+
 </div>
 
- 
-  </header>
-    <!-- HEADER principal-->
-<header>
-    <div class="logo">
-      <img src="assets/img/logo.jpg" alt="Logo Licorería UTP">
+<header> <!-- Encabezado principal -->
+  <div class="logo"> <!-- Contenedor del logo -->
+    <img src="assets/img/logo.jpg" alt="Logo Licorería UTP"> <!-- Imagen del logo -->
+  </div>
+
+  <nav class="navbar"> <!-- Navegación principal -->
+    <div class="hamburguesa"> <!-- Icono de menú móvil -->
+      <span></span> <!-- Línea 1 -->
+      <span></span> <!-- Línea 2 -->
+      <span></span> <!-- Línea 3 -->
     </div>
-    <nav>
-      <ul>
-        <li><a class="nav-menu  nav-link-active" href="index.html">Inicio</a></li>
-        <li><a class="nav-menu" href="assets/pages/quienessomos.html">Quiénes Somos</a></li>
-        <li><a class="nav-menu" href="assets/pages/productos.html">Productos</a></li>
-        <li><a class="nav-menu" href="assets/pages/nuestroequipo.html">Nuestro Equipo</a></li>
-        <li><a class="nav-menu" href="assets/pages/contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+
+    <ul id="menuNav"> <!-- Lista de enlaces del menú -->
+      <li><a class="nav-menu nav-link-active" href="index.html">Inicio</a></li> <!-- Enlace Inicio -->
+      <li><a class="nav-menu" href="assets/pages/quienessomos.html">Quiénes Somos</a></li> <!-- Enlace QS -->
+      <li><a class="nav-menu" href="assets/pages/productos.html">Productos</a></li> <!-- Enlace productos -->
+      <li><a class="nav-menu" href="assets/pages/nuestroequipo.html">Nuestro Equipo</a></li> <!-- Enlace equipo -->
+      <li><a class="nav-menu" href="assets/pages/contacto.html">Contacto</a></li> <!-- Enlace contacto -->
+    </ul>
+  </nav>
+</header>
+
+<main> <!-- Contenido principal -->
+
   <!-- BANNER -->
-  <section id="inicio" class="banner">
-    <div class="banner-content">
-      <h1>Bienvenidos a Licorería UTP</h1>
-      <p>La mejor selección de licores en un solo lugar</p>
-      <a href="#productos" class="btn">Explorar Productos</a>
+  <section id="inicio" class="banner"> <!-- Sección de portada -->
+    <div class="banner-content"> <!-- Contenido del banner -->
+      <h1>Bienvenidos a Licorería UTP</h1> <!-- Título principal -->
+      <p>La mejor selección de licores en un solo lugar</p> <!-- Subtítulo -->
+      <a href="#productos" class="btn">Explorar Productos</a> <!-- Botón hacia productos -->
     </div>
   </section>
 
   <!-- QUIÉNES SOMOS -->
-  <section id="quienes" class="quienes">
-    <h2>Quiénes Somos</h2>
-    <p>
+  <section id="quienes" class="quienes"> <!-- Sección sobre la empresa -->
+    <h2>Quiénes Somos</h2> <!-- Título -->
+    <p> <!-- Párrafo descriptivo -->
       En Licorería UTP ofrecemos una experiencia única para nuestros clientes,
       brindando la mejor selección de whiskies, vinos y cervezas.
       Nuestra misión es la excelencia en calidad y servicio.
@@ -67,105 +77,118 @@
   </section>
 
   <!-- PRODUCTOS -->
-  <section id="productos" class="productos">
-    <h2>Nuestros Productos</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="assets/img/whisky.jpg" alt="Whisky">
-        <h3>Whisky</h3>
-        <p>Variedades premium de las mejores marcas internacionales.</p>
-         <!-- Tabla responsive -->
-    <div class="tabla-responsive">
-      <table>
-        <tr><th>Especificación</th><th>Detalle</th></tr>
-        <tr><td>Marca</td><td>Johnnie Walker</td></tr>
-        <tr><td>Etiqueta</td><td>Blue Label</td></tr>
-        <tr><td>Tipo</td><td>Blended Scotch Whisky</td></tr>
-        <tr><td>Graduación</td><td>40%</td></tr>
-        <tr><td>Volumen</td><td>750 ml</td></tr>
-        <tr><td>Precio</td><td>S/ 1,449.90</td></tr>
-      </table>
-    </div>
+  <section id="productos" class="productos"> <!-- Sección de productos -->
+    <h2>Nuestros Productos</h2> <!-- Título -->
+    <div class="grid"> <!-- Contenedor en cuadrícula -->
+
+      <div class="card"> <!-- Tarjeta de producto -->
+        <img src="assets/img/whisky.jpg" alt="Whisky"> <!-- Imagen -->
+        <h3>Whisky</h3> <!-- Nombre del producto -->
+        <p>Variedades premium de las mejores marcas internacionales.</p> <!-- Descripción -->
+
+        <!-- Tabla responsive -->
+        <div class="tabla-responsive"> <!-- Contenedor tabla -->
+          <table> <!-- Tabla de detalles -->
+            <tr><th>Especificación</th><th>Detalle</th></tr>
+            <tr><td>Marca</td><td>Johnnie Walker</td></tr>
+            <tr><td>Etiqueta</td><td>Blue Label</td></tr>
+            <tr><td>Tipo</td><td>Blended Scotch Whisky</td></tr>
+            <tr><td>Graduación</td><td>40%</td></tr>
+            <tr><td>Volumen</td><td>750 ml</td></tr>
+            <tr><td>Precio</td><td>S/ 1,449.90</td></tr>
+          </table>
+        </div>
       </div>
-      <div class="card">
-        <img src="assets/img/vinos.jpg" alt="Vino">
+
+      <div class="card"> <!-- Tarjeta vinos -->
+        <img src="assets/img/vinos.jpg" alt="Vino"> <!-- Imagen -->
         <h3>Vinos</h3>
         <p>Una amplia selección de vinos nacionales e importados.</p>
-          <div class="tabla-responsive">
-      <table>
-        <tr><th>Especificación</th><th>Detalle</th></tr>
-        <tr><td>Marca</td><td>Château Margaux</td></tr>
-        <tr><td>Variedad</td><td>Bordeaux Premier Grand Cru Classé</td></tr>
-        <tr><td>Año</td><td>2015</td></tr>
-        <tr><td>Tipo</td><td>Tinto seco</td></tr>
-        <tr><td>País</td><td>Francia</td></tr>
-        <tr><td>Volumen</td><td>750 ml</td></tr>
-        <tr><td>Graduación</td><td>13.5%</td></tr>
-        <tr><td>Precio</td><td>S/ 4,999.00</td></tr>
-      </table>
-    </div>
+
+        <div class="tabla-responsive"> <!-- Tabla vinos -->
+          <table>
+            <tr><th>Especificación</th><th>Detalle</th></tr>
+            <tr><td>Marca</td><td>Château Margaux</td></tr>
+            <tr><td>Variedad</td><td>Bordeaux Premier Grand Cru Classé</td></tr>
+            <tr><td>Año</td><td>2015</td></tr>
+            <tr><td>Tipo</td><td>Tinto seco</td></tr>
+            <tr><td>País</td><td>Francia</td></tr>
+            <tr><td>Volumen</td><td>750 ml</td></tr>
+            <tr><td>Graduación</td><td>13.5%</td></tr>
+            <tr><td>Precio</td><td>S/ 4,999.00</td></tr>
+          </table>
+        </div>
       </div>
-      <div class="card">
-        <img src="assets/img/cerveza.jpg" alt="Cerveza">
+
+      <div class="card"> <!-- Tarjeta cerveza -->
+        <img src="assets/img/cerveza.jpg" alt="Cerveza"> <!-- Imagen -->
         <h3>Cervezas</h3>
         <p>Las cervezas más refrescantes para toda ocasión.</p>
-         <div class="tabla-responsive">
-      <table>
-        <tr><th>Especificación</th><th>Detalle</th></tr>
-        <tr><td>Marca</td><td>Heineken</td></tr>
-        <tr><td>Tipo</td><td>Lager Premium</td></tr>
-        <tr><td>País</td><td>Países Bajos</td></tr>
-        <tr><td>Graduación</td><td>5%</td></tr>
-        <tr><td>Volumen</td><td>330 ml</td></tr>
-        <tr><td>Presentaciones</td><td>Botella / Lata / Pack 6</td></tr>
-        <tr><td>Precio</td><td>S/ 9.50 (unidad)</td></tr>
-      </table>
-    </div>
+
+        <div class="tabla-responsive"> <!-- Tabla -->
+          <table>
+            <tr><th>Especificación</th><th>Detalle</th></tr>
+            <tr><td>Marca</td><td>Heineken</td></tr>
+            <tr><td>Tipo</td><td>Lager Premium</td></tr>
+            <tr><td>País</td><td>Países Bajos</td></tr>
+            <tr><td>Graduación</td><td>5%</td></tr>
+            <tr><td>Volumen</td><td>330 ml</td></tr>
+            <tr><td>Presentaciones</td><td>Botella / Lata / Pack 6</td></tr>
+            <tr><td>Precio</td><td>S/ 9.50 (unidad)</td></tr>
+          </table>
+        </div>
       </div>
+
     </div>
   </section>
 
   <!-- TESTIMONIOS -->
-  <section class="testimonios">
+  <section class="testimonios"> <!-- Sección testimonios -->
     <h2>Testimonios</h2>
-    <div class="testimonio">
+    <div class="testimonio"> <!-- Testimonio 1 -->
       <p>“Excelente atención y productos de gran calidad. Siempre encuentro lo que necesito.”</p>
       <span>- Juan Pérez</span>
     </div>
-    <div class="testimonio">
+    <div class="testimonio"> <!-- Testimonio 2 -->
       <p>“La mejor licorería de la ciudad, precios justos y gran variedad.”</p>
       <span>- María López</span>
     </div>
   </section>
 
   <!-- EQUIPO -->
-  <section id="equipo" class="equipo">
+  <section id="equipo" class="equipo"> <!-- Sección equipo -->
     <h2>Nuestro Equipo</h2>
-    <div class="colaboradores">
-      <div class="colaborador">
-        <img src="assets/img/colaborador1.jpg" alt="Colaborador 1">
+    <div class="colaboradores"> <!-- Contenedor colaboradores -->
+
+      <div class="colaborador"> <!-- Tarjeta 1 -->
+        <img src="assets/img/colaborador1.jpg" alt="Colaborador 1"> <!-- Foto -->
         <h3>Andrés Silva</h3>
         <p>Gerente General</p>
       </div>
-      <div class="colaborador">
+
+      <div class="colaborador"> <!-- Tarjeta 2 -->
         <img src="assets/img/colaborador2.jpg" alt="Colaboradora 2">
         <h3>Lucía Torres</h3>
         <p>Atención al Cliente</p>
       </div>
-      <div class="colaborador">
+
+      <div class="colaborador"> <!-- Tarjeta 3 -->
         <img src="assets/img/colaborador3.jpg" alt="Colaborador 3">
         <h3>Carlos Díaz</h3>
         <p>Distribución</p>
       </div>
+
     </div>
   </section>
 
   <!-- VIDEO -->
-  <section class="video">
+  <section class="video"> <!-- Sección video -->
     <h2>Conócenos Más</h2>
-    <video src="assets/video/video.mp4" autoplay muted loop controls></video>
-   <!-- VIDEO DE YOUTUBE RELACIONADO -->
-    <div class="youtube-video">
+
+    <video src="assets/video/video.mp4" autoplay muted loop controls></video> <!-- Video local -->
+
+    <!-- VIDEO DE YOUTUBE -->
+    <div class="youtube-video"> <!-- Contenedor video YouTube -->
       <h3>Temas Relacionados al Mundo del Licor</h3>
       <iframe width="560" height="315"
         src="https://www.youtube.com/embed/BeXBO9Y7Nw4"
@@ -178,46 +201,52 @@
   </section>
 
   <!-- FORMULARIO -->
-  <section id="contacto" class="contacto">
+  <section id="contacto" class="contacto"> <!-- Sección contacto -->
     <h2>Contáctanos</h2>
-    <form action="#" method="POST">
+    <form action="#" method="POST"> <!-- Formulario -->
       <input type="text" name="nombre" placeholder="Tu nombre" required>
       <input type="email" name="correo" placeholder="Tu correo" required>
       <textarea name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
       <button type="submit">Enviar Mensaje</button>
     </form>
   </section>
-  
+
   <!-- MARCAS DESTACADAS -->
-<section class="marcas">
-  <h2>Marcas Destacadas</h2>
-  <p class="subtitulo">Las mejores marcas y bebidas premium que nos representan.</p>
-  <div class="marcas-flex">
-    <div class="marca">
-      <img src="assets/img/Marca Whisky.jpg" alt="Whisky">
-      <p>Whisky</p>
+  <section class="marcas"> <!-- Sección marcas -->
+    <h2>Marcas Destacadas</h2>
+    <p class="subtitulo">Las mejores marcas y bebidas premium que nos representan.</p>
+
+    <div class="marcas-flex"> <!-- Contenedor flex -->
+
+      <div class="marca"> <!-- Tarjeta -->
+        <img src="assets/img/Marca Whisky.jpg" alt="Whisky">
+        <p>Whisky</p>
+      </div>
+
+      <div class="marca"> <!-- Tarjeta vino -->
+        <img src="assets/img/logo vino.jpg" alt="Vinos">
+        <p>Vinos</p>
+      </div>
+
+      <div class="marca"> <!-- Tarjeta cerveza -->
+        <img src="assets/img/logo cerveza.jpg" alt="Cerveza">
+        <p>Cerveza</p>
+      </div>
+
     </div>
-    <div class="marca">
-      <img src="assets/img/logo vino.jpg" alt="Vinos">
-      <p>Vinos</p>
-    </div>
-    <div class="marca">
-      <img src="assets/img/logo cerveza.jpg" alt="Cerveza">
-      <p>Cerveza</p>
-    </div>
-  </div>
-</section>
+  </section>
 </main>
 
-  <!-- BOTÓN SCROLL-UP -->
-  <button id="scrollUp" title="Volver arriba">↑</button>
+<!-- BOTÓN SCROLL-UP -->
+<button id="scrollUp" title="Volver arriba">↑</button> <!-- Botón subir -->
 
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2025 Licorería UTP - Todos los derechos reservados</p>
-  </footer>
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2025 Licorería UTP - Todos los derechos reservados</p> <!-- Mensaje legal -->
+</footer>
 
-  <!-- SCRIPT -->
- <script src="js/script.js"></script>
+<!-- SCRIPT -->
+<script src="js/script.js"></script> <!-- Archivo JS -->
+
 </body>
 </html>
